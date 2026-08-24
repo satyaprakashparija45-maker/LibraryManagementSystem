@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <!-- Importing elegant typography -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Base setup to center the card on screen */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color:wheat ; /* Soft elegant cream background */
+            font-family: 'Cormorant Garamond', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Wedding Card Layout Container */
+        .wedding-card {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 480px;
+            padding: 40px;
+            text-align: center;
+            border: 1px solid #e5d5be; /* Fine golden border */
+            box-shadow: 0 10px 30px rgba(184, 150, 110, 0.1); /* Soft warm glow shadow */
+            position: relative;
+        }
+
+        /* Inner border design detailing */
+        .card-inner-border {
+            border: 1px solid #b8966e;
+            padding: 30px 20px;
+            height: 100%;
+        }
+
+        /* Decorative top heart or icon element */
+        .decorative-icon {
+            font-size: 24px;
+            color: #b8966e;
+            margin-bottom: 15px;
+            letter-spacing: 3px;
+        }
+
+        /* Subheadings or intro text style */
+        .intro-text {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #7a6e67;
+            margin-bottom: 25px;
+        }
+
+        /* The couple's names using cursive calligraphy script font */
+        .couple-names {
+            font-family: 'Great Vibes', cursive;
+            font-size: 48px;
+            color: #b8966e;
+            line-height: 1.2;
+            margin-bottom: 25px;
+        }
+
+        .couple-names span {
+            display: block;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 24px;
+            font-style: italic;
+            color: #7a6e67;
+            margin: 5px 0;
+        }
+
+        /* Invitation main message body */
+        .invitation-details {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #4a4a4a;
+            margin-bottom: 30px;
+        }
+
+        /* Date and Time block configuration */
+        .event-schedule {
+            border-top: 1px solid #e5d5be;
+            border-bottom: 1px solid #e5d5be;
+            padding: 15px 0;
+            margin-bottom: 30px;
+        }
+
+        .date {
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #b8966e;
+            margin-bottom: 5px;
+        }
+
+        .time {
+            font-size: 16px;
+            color: #7a6e67;
+            font-style: italic;
+        }
+
+        /* Venue block configuration */
+        .venue {
+            margin-bottom: 35px;
+        }
+
+        .venue-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #4a4a4a;
+            margin-bottom: 5px;
+        }
+
+        .venue-address {
+            font-size: 16px;
+            color: #7a6e67;
+        }
+
+        /* Interactive RSVP interactive call to action button */
+        .rsvp-button {
+            display: inline-block;
+            background-color: #b8966e;
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 12px 35px;
+            border: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        /* Hover animation effect */
+        .rsvp-button:hover {
+            background-color: #ffffff;
+            color: #b8966e;
+            border-color: #b8966e;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Wedding Card structure Layout -->
+    <div class="wedding-card">
+        <div class="card-inner-border">
+            
+            <!-- Decorative Element -->
+            <div class="decorative-icon">❖</div>
+            
+            <!-- Invitation Intro Section -->
+            <p class="intro-text">Together with their families</p>
+            
+            
+            <h1 class="couple-names">
+                Alexander Smith
+                <span>&</span>
+                Charlotte Davies
+            </h1>
+            
+            <!-- Invitation Call Message -->
+            <p class="invitation-details">
+                request the honor of your presence<br>
+                at the celebration of their marriage
+            </p>
+            
+            <!-- Event Timing Parameters -->
+            <div class="event-schedule">
+                <p class="date">Saturday, Oct 17, 2026</p>
+                <p class="time">at four o'clock in the afternoon</p>
+            </div>
+            
+            <!-- Location Context -->
+            <div class="venue">
+                <p class="venue-title">The Grand Orchid Pavilion</p>
+                <p class="venue-address">123 Elegance Lane, Beverly Hills, CA</p>
+            </div>
+            
+            <!-- Action Button Linking Area -->
+            <a href="#rsvp" class="rsvp-button">RSVP Online</a>
+            
+        </div>
+    </div>
+
+</body>
+</html>
